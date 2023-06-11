@@ -383,6 +383,11 @@ M:	Jelle van der Waa <jelle@vdwaa.nl>
 S:	Maintained
 F:	configs/nanopi_neo_air_defconfig
 
+NANOPI-R1S-H3 BOARD
+M:	Darsey Litzenberger <dlitz+uboot@dlitz.net>
+S:	Maintained
+F:	configs/nanopi_r1s_h3_defconfig
+
 NANOPI-R1S-H5 BOARD
 M:	Chukun Pan <amadeus@jmu.edu.cn>
 S:	Maintained
