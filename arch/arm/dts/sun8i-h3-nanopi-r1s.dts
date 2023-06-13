@@ -8,6 +8,11 @@
 #include "sun8i-h3-nanopi.dtsi"
 #include <dt-bindings/leds/common.h>
 
+/* Backport to u-boot v2022.10 */
+#ifndef CLK_OSC32K_FANOUT
+# define CLK_OSC32K_FANOUT 1
+#endif
+
 / {
 	model = "FriendlyElec NanoPi-R1S-H3";
 	compatible = "friendlyelec,nanopi-r1s-h3", "allwinner,sun8i-h3";
