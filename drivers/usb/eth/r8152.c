@@ -1323,6 +1323,13 @@ static void r8153b_init(struct r8152 *tp)
 	rtl_tally_reset(tp);
 	r8153b_hw_phy_cfg(tp);
 	r8152b_enable_fc(tp);
+
+	/* enable LEDs
+	 * LED0: activity
+	 * LED1: link 10/100/1000 Mbps
+	 */
+	ocp_data = 0x78;
+	ocp_write_word(tp, MCU_TYPE_PLA, PLA_LEDSEL, ocp_data);
 }
 
 static void rtl8152_unload(struct r8152 *tp)
