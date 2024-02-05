@@ -4,8 +4,8 @@
 #define SOC_PERIPHERAL_IRQ(nr) GIC_SPI nr
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
-#include <../../riscv/dts/sunxi-d1s-t113.dtsi>
-#include <../../riscv/dts/sunxi-d1-t113.dtsi>
+#include <riscv/allwinner/sunxi-d1s-t113.dtsi>
+#include <riscv/allwinner/sunxi-d1-t113.dtsi>
 
 / {
 	interrupt-parent = <&gic>;

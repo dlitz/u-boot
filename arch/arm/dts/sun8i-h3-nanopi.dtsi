@@ -60,8 +60,6 @@
 
 	leds {
 		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&leds_npi>, <&leds_r_npi>;
 
 		led-0 {
 			color = <LED_COLOR_ID_BLUE>;
@@ -82,8 +80,6 @@
 
 	gpio-keys {
 		compatible = "gpio-keys";
-		pinctrl-names = "default";
-		pinctrl-0 = <&sw_r_npi>;
 
 		key-0 {
 			label = "k1";
@@ -107,25 +103,6 @@
 
 &ohci3 {
 	status = "okay";
-};
-
-&pio {
-	leds_npi: led_pins {
-		pins = "PA10";
-		function = "gpio_out";
-	};
-};
-
-&r_pio {
-	leds_r_npi: led_pins {
-		pins = "PL10";
-		function = "gpio_out";
-	};
-
-	sw_r_npi: key_pins {
-		pins = "PL3";
-		function = "gpio_in";
-	};
 };
 
 &uart0 {
